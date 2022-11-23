@@ -8,4 +8,5 @@ fun main() {
     myInventoryManagement.getAllItems()
     myInventoryManagement.removeItem("Choco")
     myInventoryManagement.getAllItems()
+    myInventoryManagement.findItem("Choco")
 }

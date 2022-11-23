@@ -14,6 +14,16 @@ class InventoryManagement {
         }
         return false
     }
+    fun findItem(name: String?):Unit{
+        for (item in inventory){
+            if (item.name == name) {
+                println("${item.name} : ${item.num}")
+                return
+            }
+        }
+        println("$name not found.")
+
+    }
     fun addItems(items:Array<Item>){
         items.forEach { inventory.add(it) }
     }
