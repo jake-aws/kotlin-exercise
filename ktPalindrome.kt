@@ -6,5 +6,7 @@ fun checkPalindrome() {
     val reverseString = trimmedOriginalString.reversed()
     if (trimmedOriginalString.equals(reverseString,ignoreCase = true)){
         print("$originalString and $reverseString are equal")
+    }else{
+        println("$originalString is not a palindrome")
     }
 }
